@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ひな子へ</title>
-
+  <title>For You ❤️</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,16 +11,36 @@
     <h1 id="title">Happy Valentine’s Day ❤️</h1>
 
     <div id="scene">
-        <div id="pot"></div>
-        <div id="stem"></div>
-        <div class="flower">
-            <div class="petal"></div>
-            <div class="petal"></div>
-            <div class="petal"></div>
-            <div class="petal"></div>
-            <div class="center"></div>
-        </div>
-        </div>
+
+      <!-- SVG STEMS -->
+      <svg id="stems" viewBox="0 0 300 400" preserveAspectRatio="none">
+
+        <!-- All stems start from same bottom center (150, 350) -->
+
+        <path class="stem-path"
+          d="M150 350 Q140 260 110 200" />
+
+        <path class="stem-path"
+          d="M150 350 Q145 240 130 170" />
+
+        <path class="stem-path"
+          d="M150 350 Q150 230 150 140" />
+
+        <path class="stem-path"
+          d="M150 350 Q170 250 200 190" />
+
+      </svg>
+
+      <!-- FLOWERS -->
+      <div class="flower flower1" style="left:110px; top:200px;"></div>
+      <div class="flower flower2" style="left:130px; top:170px;"></div>
+      <div class="flower flower3" style="left:150px; top:140px;"></div>
+      <div class="flower flower4" style="left:200px; top:190px;"></div>
+
+      <!-- POT -->
+      <div id="pot"></div>
+
+    </div>
   </div>
 
   <script src="script.js"></script>
