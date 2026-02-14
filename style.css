@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(#fff0f5, #ffe4ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system;
+}
+
+#app {
+  width: 100%;
+  max-width: 390px;
+  text-align: center;
+}
+
+#title {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 1s ease;
+}
+
+#title.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#scene {
+  position: relative;
+  height: 300px;
+}
+
+/* Stem */
+#stem {
+  width: 6px;
+  height: 0;
+  background: #2e8b57;
+  margin: 0 auto;
+  transition: height 1.5s ease;
+}
+
+/* Flower */
+#flower {
+  width: 60px;
+  height: 60px;
+  background: pink;
+  border-radius: 50%;
+  margin: 0 auto;
+  transform: scale(0);
+  transition: transform 1s ease;
+}
+
+/* Pot */
+#pot {
+  width: 120px;
+  height: 80px;
+  background: #a0522d;
+  border-radius: 0 0 20px 20px;
+  margin: 0 auto;
+  cursor: pointer;
+}
