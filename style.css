@@ -18,6 +18,17 @@ body {
   text-align: center;
 }
 
+#subtitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #ff9de1, #ffc2a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 40px 0;
+  opacity: 1;
+}
+
 #title {
   font-family: 'Pacifico', cursive;
   font-size: 2.5rem;
