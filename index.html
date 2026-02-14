@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>For You ❤️</title>
+  <title>ひな子へ</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,33 +12,72 @@
 
     <div id="scene">
 
+      <div id="confetti"></div>
+
       <!-- SVG STEMS -->
       <svg id="stems" viewBox="0 0 300 400" preserveAspectRatio="none">
-
-        <!-- All stems start from same bottom center (150, 350) -->
-
-        <path class="stem-path"
-          d="M150 350 Q140 260 110 200" />
-
-        <path class="stem-path"
-          d="M150 350 Q145 240 130 170" />
-
-        <path class="stem-path"
-          d="M150 350 Q150 230 150 140" />
-
-        <path class="stem-path"
-          d="M150 350 Q170 250 200 190" />
-
+        <path class="stem-path" d="M120 350 Q110 220 80 120" />
+        <path class="stem-path" d="M150 350 Q145 240 125 175" />
+        <path class="stem-path" d="M150 350 Q160 200 180 110" />
+        <path class="stem-path" d="M160 350 Q180 250 210 190" />
       </svg>
 
-      <!-- FLOWERS -->
-      <div class="flower flower1" style="left:110px; top:200px;"></div>
-      <div class="flower flower2" style="left:130px; top:170px;"></div>
-      <div class="flower flower3" style="left:150px; top:140px;"></div>
-      <div class="flower flower4" style="left:200px; top:190px;"></div>
+      <!-- FLOWERS with SVG petals -->
+      <div class="flower flower1" style="left:80px; top:120px; --petal:#f8ae1e; --center:#852c00; --petal-length:60px; --center-size:20;">
+        <svg width="100%" height="100%" viewBox="-50 -50 100 100">
+          <g class="petals">
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(350)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(80)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(170)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(260)"/>
+          </g>
+          <circle cx="0" cy="0" r="15" fill="var(--center)"/>
+        </svg>
+      </div>
+
+      <div class="flower flower3" style="left:180px; top:110px; --petal:#ddd5a5; --center:#fabb07; --petal-length:40px; --center-size:10;">
+        <svg width="100%" height="100%" viewBox="-50 -50 100 100">
+          <g class="petals">
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(60)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(150)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(240)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(330)"/>
+          </g>
+          <circle cx="0" cy="0" r="10" fill="var(--center)"/>
+        </svg>
+      </div>
+
+      <div class="flower flower2" style="left:125px; top:175px; --petal:#e4577a; --center:#7d7018; --petal-length:50px; --center-size:14;">
+        <svg width="100%" height="100%" viewBox="-50 -50 100 100">
+          <g class="petals">
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(90)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(180)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(270)"/>
+          </g>
+          <circle cx="0" cy="0" r="8" fill="var(--center)"/>
+        </svg>
+      </div>
+
+      <div class="flower flower4" style="left:210px; top:190px; --petal:#da114d; --center:#cb6b5e; --petal-length:55px; --center-size:12;">
+        <svg width="100%" height="100%" viewBox="-50 -50 100 100">
+          <g class="petals">
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(10)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(100)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(190)"/>
+            <path d="M0,0 C12,-30 20,-30 0,-50 C-20,-30 -12,-30 0,0 Z" fill="var(--petal)" transform="rotate(280)"/>
+          </g>
+          <circle cx="0" cy="0" r="12" fill="var(--center)"/>
+        </svg>
+      </div>
 
       <!-- POT -->
-      <div id="pot"></div>
+      <div id="pot">
+        <div class="pot-rim"></div>
+        <div class="pot-stripe"></div>
+        <div class="pot-body"></div>
+        <div class="pot-saucer"></div>
+      </div>
 
     </div>
   </div>
