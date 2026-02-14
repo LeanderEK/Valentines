@@ -33,27 +33,11 @@ body {
 
 #scene {
   position: relative;
-  height: 300px;
-}
-
-/* Stem */
-#stem {
-  width: 6px;
-  height: 0;
-  background: #2e8b57;
-  margin: 0 auto;
-  transition: height 1.5s ease;
-}
-
-/* Flower */
-#flower {
-  width: 60px;
-  height: 60px;
-  background: pink;
-  border-radius: 50%;
-  margin: 0 auto;
-  transform: scale(0);
-  transition: transform 1s ease;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /* Pot */
@@ -62,6 +46,46 @@ body {
   height: 80px;
   background: #a0522d;
   border-radius: 0 0 20px 20px;
-  margin: 0 auto;
   cursor: pointer;
+  z-index: 2;
+}
+
+/* Stem */
+#stem {
+  width: 6px;
+  height: 0;
+  background: #2e8b57;
+  transition: height 1.5s ease;
+}
+
+/* Flower container */
+.flower {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  transform: scale(0);
+  transition: transform 1s ease;
+}
+
+.petal {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #ff8fab;
+  border-radius: 50%;
+}
+
+.petal:nth-child(1) { top: 0; left: 15px; }
+.petal:nth-child(2) { top: 15px; right: 0; }
+.petal:nth-child(3) { bottom: 0; left: 15px; }
+.petal:nth-child(4) { top: 15px; left: 0; }
+
+.center {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 24px;
+  height: 24px;
+  background: #ffd166;
+  border-radius: 50%;
 }
